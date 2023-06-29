@@ -1,0 +1,14 @@
+{
+  "name": "@xerocross/literate",
+  "version": "1.0.0",
+  "description": "A small utility for writing in a style inspired by literate programming.",
+  "main": "dist/literate.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "literate"
+  ],
+  "author": "Adam Cross",
+  "license": "MIT"
+}

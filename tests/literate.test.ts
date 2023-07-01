@@ -1,8 +1,8 @@
-import { doThis, given } from "../src/literate";
+import { letUs, given } from "../src/literate";
 
 it("runs code in the code function", () => {
     let codeRan = false;
-    doThis("some code that does something", () => {
+    letUs("some code that does something", () => {
         codeRan = true;
     });
     expect(codeRan).toBeTruthy();

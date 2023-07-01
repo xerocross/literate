@@ -4,7 +4,11 @@ const letUs = (description:string, code:() => any) => {
 const soWe = letUs;
 const since = letUs;
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-const weKnowThat = (description:string) => {};
+const weKnowThat = (description:string, code?:() => any) => {
+    if (code) {
+        code();
+    }
+};
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const whichImpliesThat = weKnowThat;
 const given = (message: string, statement : boolean) => {

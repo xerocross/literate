@@ -1,16 +1,21 @@
-const letUs = (description:string, code:() => any) => {
+const noteAnd = (description:string, code:() => any) => {
     return code();
 };
-const soWe = letUs;
-const since = letUs;
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const weKnowThat = (description:string, code?:() => any) => {
+const letUs = noteAnd;
+const soWe = noteAnd;
+const since = noteAnd;
+
+const noteAndMaybe = (description:string, code?:() => any) => {
     if (code) {
-        code();
+        return code();
     }
 };
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const whichImpliesThat = weKnowThat;
+const so = noteAndMaybe;
+const itFollowsThat = noteAndMaybe;
+const weKnowThat = noteAndMaybe;
+const whichImpliesThat = noteAndMaybe;
+const therefore = noteAndMaybe;
+const noteThat = noteAndMaybe;
 const given = (message: string, statement : boolean) => {
     let result = statement;
     const and = (message: string, s2:boolean) => {
@@ -31,4 +36,5 @@ const given = (message: string, statement : boolean) => {
 };
 const check = (description:string, statement:boolean) => (statement);
 const weHave = check;
-export { letUs, since, given, weKnowThat, check, soWe, weHave, whichImpliesThat };
+const weHaveThat = check;
+export { letUs, itFollowsThat, therefore, since, given, weKnowThat, check, soWe, weHave, whichImpliesThat, so, weHaveThat, noteThat};
